@@ -13,3 +13,10 @@ sum(is.na(data$bikes))
 data <- data[!is.na(data$bikes),]
 sum(is.na(data$bikes))
 
+
+mean <- mean(data$windDirection.grades, na.rm=TRUE)
+data$windDirection.grades[is.na(data$windDirection.grades)] <- mean
+
+any(apply(data, 2, function(x) any(is.na(x))))
+apply(data, 2, function(x) any(is.na(x)))
+nrow(data)
