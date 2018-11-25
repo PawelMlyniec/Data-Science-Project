@@ -1,2 +1,2 @@
-# Data-Science-Procect
-Impovment of bike rental system
+# Data-Science-Project
+Improvement of bike rental system
